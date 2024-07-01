@@ -16,9 +16,9 @@ ios_application(
     resources = glob(["Resources/**"]),
     extensions = [
         "//file_provider_extension:FileProviderExtension",
-        "//vendor:Sentry",
     ],
     deps = [
         ":ios_app_swift_sources",
+        "//vendor:Sentry",
     ],
 )
