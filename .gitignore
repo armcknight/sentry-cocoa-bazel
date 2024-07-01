@@ -12,3 +12,7 @@
 # Bazel stuff
 bazel-*
 MODULE.bazel**
+
+# Carthage stuff
+vendor/Cartfile.resolved
+vendor/Carthage

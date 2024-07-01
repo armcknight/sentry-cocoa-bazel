@@ -16,5 +16,6 @@ ios_extension(
     visibility = ["//visibility:public"],
     deps = [
         ":file_provider_swift_sources",
+        "//vendor:Sentry",
     ]
 )
