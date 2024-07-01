@@ -1,0 +1,14 @@
+# emacs stuff
+*.elc
+*~
+\#*\#
+
+# generated Xcode projects
+*.xcodeproj
+
+# Apple stuff
+.DS_Store
+
+# Bazel stuff
+bazel-*
+MODULE.bazel**
