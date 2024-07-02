@@ -4,6 +4,9 @@ load("@build_bazel_rules_swift//swift:swift.bzl", "swift_library")
 swift_library(
     name = "ios_app_swift_sources",
     srcs = glob(["Sources/**/*.swift"]),
+    deps = [
+        "//vendor:Sentry",
+    ],
 )
 
 ios_application(
@@ -19,6 +22,5 @@ ios_application(
     ],
     deps = [
         ":ios_app_swift_sources",
-        "//vendor:Sentry",
     ],
 )

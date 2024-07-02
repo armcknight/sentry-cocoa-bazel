@@ -4,6 +4,9 @@ load("@build_bazel_rules_swift//swift:swift.bzl", "swift_library")
 swift_library(
     name = "file_provider_swift_sources",
     srcs = glob(["Sources/**/*.swift"]),
+    deps = [
+        "//vendor:Sentry",
+    ],
 )
 
 ios_extension(
@@ -16,6 +19,5 @@ ios_extension(
     visibility = ["//visibility:public"],
     deps = [
         ":file_provider_swift_sources",
-        "//vendor:Sentry",
     ]
 )
