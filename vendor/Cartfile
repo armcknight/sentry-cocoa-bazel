@@ -1,1 +1,1 @@
-github "getsentry/sentry-cocoa"
+github "getsentry/sentry-cocoa" "armcknight/fix/module-names"
