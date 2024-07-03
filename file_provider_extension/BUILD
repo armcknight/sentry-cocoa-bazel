@@ -5,7 +5,7 @@ swift_library(
     name = "file_provider_swift_sources",
     srcs = glob(["Sources/**/*.swift"]),
     deps = [
-        "//vendor:Sentry",
+        "//vendor:SentryWithoutUIKit",
     ],
 )
 

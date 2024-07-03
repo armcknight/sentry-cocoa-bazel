@@ -4,6 +4,14 @@ apple_dynamic_xcframework_import(
     name = "Sentry",
     visibility = ["//visibility:public"],
     xcframework_imports = glob([
-        "Carthage/Build/Sentry-Dynamic.xcframework/**",
+        "Carthage/Build/Sentry.xcframework/**",
+    ]),
+)
+
+apple_dynamic_xcframework_import(
+    name = "SentryWithoutUIKit",
+    visibility = ["//visibility:public"],
+    xcframework_imports = glob([
+        "Carthage/Build/SentryWithoutUIKit.xcframework/**",
     ]),
 )

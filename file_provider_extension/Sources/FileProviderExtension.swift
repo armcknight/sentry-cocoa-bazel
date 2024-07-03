@@ -1,4 +1,4 @@
-import Sentry
+import SentryWithoutUIKit
 import FileProvider
 
 class FileProviderExtension: NSFileProviderExtension {
